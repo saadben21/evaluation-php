@@ -1,7 +1,8 @@
 <?php
-// recuprer l'heure dans une variable
 $heure = date("H");
-// afficher message suivant le moment de la journée
+$minute = date("i");
+$seconde = date("s");
+echo "<h1>L'heure actuelle est : " . $heure . ":" . $minute . ":" . $seconde . "</h1>";
 if ($heure < 12) {
     echo "Bonne matinée";
 } elseif ($heure < 14) {
@@ -10,5 +11,5 @@ if ($heure < 12) {
     echo "Bon après-midi";
 } else {
     echo "Bonne soirée";
-}
+}echo "Bonne soirée";
 ?>
